@@ -1,3 +1,8 @@
 #!/bin/bash
 
-docker run -d -p 80:80 -v `pwd`/conf/:/etc/nginx/:ro --name nginx-forward chad/nginx-forward
+docker run -d \
+        -p 80:80 \
+        -v `pwd`/conf/:/etc/nginx/:ro \
+        -v `pwd`/data/:/opt/nginx/:rw \
+        --name nginx chad/nginx-forward
+
