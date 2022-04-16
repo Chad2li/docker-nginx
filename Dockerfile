@@ -1,5 +1,5 @@
-# Version 0.0.1
-FROM nginx:1.11.13
+# Version 1.0.1
+FROM nginx:1.21.6
 MAINTAINER chad <li17206@163.com>
 
 
