@@ -3,6 +3,8 @@
 
 mkdir -p data logs
 
+docker stop nginx && docker rm nginx
+
 docker run -d \
         -p 80:80 \
 	--user 501:20 \

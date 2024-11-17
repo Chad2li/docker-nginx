@@ -1,3 +1,4 @@
 data/*
 conf/certs/*
 .DS_Store
+logs/*
