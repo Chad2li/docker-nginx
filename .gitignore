@@ -2,3 +2,9 @@ data/*
 conf/certs/*
 .DS_Store
 logs/*
+acme.sh-master*
+nginx/data/html/**
+nginx/logs/**
+acme/home/**
+nginx/conf/certs/**
+account.conf.prd
