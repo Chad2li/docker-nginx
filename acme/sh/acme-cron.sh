@@ -4,6 +4,6 @@
 source ./profile.sh
 
 # 刷新证书
-bash ./acme-new.sh && \
+bash ./acme-renew.sh && \
 # 部署
 bash ./deploy.sh
