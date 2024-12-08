@@ -7,4 +7,4 @@ if [ ! -d "$acme" ]; then
   unzip $acme.zip 
 fi
 
-docker build -t chad/nginx-forward .
+docker build -t chad/nginx .

@@ -13,4 +13,4 @@ join ' -d ' ${_split_arr[@]}
 
 cmd="$acme_sh --renew $join_str --force"
 echo eval $cmd
-#eval $cmd
+eval $cmd

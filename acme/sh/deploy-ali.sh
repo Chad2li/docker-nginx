@@ -11,7 +11,7 @@ CAS_API="https://cas.aliyuncs.com/"
 api_key=$SAVED_Ali_Key
 api_secret=$SAVED_Ali_Secret
 # 联系人id
-contact_ids='$CONTACT_IDS'
+contact_ids="$CONTACT_IDS"
 # 内网地址
 #CAS_API = "https://cas-vpc.cn-hangzhou.aliyuncs.com"
 
