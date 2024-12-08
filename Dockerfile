@@ -6,6 +6,8 @@
 FROM dhub.kubesre.xyz/nginx:latest
 MAINTAINER chad <li17206@163.com>
 
+ADD debian.sources /etc/apt/sources.list.d/debian.sources
+
 RUN \
   apt-get -y update && apt-get -y install cron
 
