@@ -6,8 +6,6 @@
 FROM dhub.kubesre.xyz/nginx:latest
 MAINTAINER chad <li17206@163.com>
 
-ADD debian.sources /etc/apt/sources.list.d/
-
 RUN \
   apt-get -y update && apt-get -y install cron
 
@@ -18,10 +16,18 @@ RUN \
 ENV acme_home=/opt/acme/home  
 ADD entry.sh /opt/entry.sh
 ADD acme.sh-master $acme_home
-COPY account.conf $acme_home
 
+# acme配置
+VOLUME $acme_home/account.conf
+# 申请证书脚本
 VOLUME /opt/acme/sh
+# nginx配置
 VOLUME /etc/nginx/
+# nginx日志
+VOLUME /var/log/nginx
+# nginx静态文件
+VOLUME /opt/nginx/
+# 时区
 VOLUME /etc/localtime
 
 EXPOSE 80

@@ -64,8 +64,8 @@ _create_deployment_job_query() {
   query=$query'&Name='$_url_encode_str
   _url_encode $resource_ids
   query=$query'&ResourceIds='$_url_encode_str
-  _url_encode $(date -d "+1 day" +%s%3N)
-  query=$query'&ScheduleTime='$_url_encode_str
+  #_url_encode $(date -d "+1 day" +%s%3N)
+  #query=$query'&ScheduleTime='$_url_encode_str
   _url_encode 'HMAC-SHA1'
   query=$query'&SignatureMethod='$_url_encode_str
   _url_encode $(date +%s%3N)$RANDOM

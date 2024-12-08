@@ -8,6 +8,7 @@ docker run -d \
         -v `pwd`/nginx/data/:/opt/nginx/:rw \
 	-v `pwd`/nginx/logs/:/var/log/nginx/:rw \
         -v `pwd`/acme/sh/:/opt/acme/sh:rw \
+        -v `pwd`/account.conf:/opt/acme/home/account.conf:ro \
 	-v /etc/localtime:/etc/localtime:ro \
         --name nginx chad/nginx-forward
 
