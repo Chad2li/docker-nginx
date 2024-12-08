@@ -109,7 +109,7 @@ _____\____\conf.d\       nginx配置文件目录
   所有的nginx配置都可以放在该目录下，并以`.conf`结尾。该目录下当前有两个例子`html.conf`
   和`https.conf`例子，需要根据实际情况修改，并移除不需要的`.conf`配置文件。
 
-当nginx配置变更后，需要执行nginx重载命令。
+当nginx配置变更后，需要执行nginx重载命令。    
 测试配置文件是否有错误：
 
 ```shell
@@ -121,3 +121,10 @@ docker exec nginx nginx -t
 ```shell
 docker exec nginx nginx -s reload
 ```
+
+
+
+# 捐赠
+你的认可是我最大的动力    
+![微信捐赠](./images/wechat1.jpeg) 
+![支付宝捐赠](./images/alipay1.jpeg)
